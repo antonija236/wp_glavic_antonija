@@ -7,5 +7,200 @@
 </head>
 <body>
     <h2>antonijaglavic</h2>
+
+    <!-- Tablice -->
+    <h3>Tablice u HTMLu</h3>
+    <table border="1">
+        <tr>
+            <th>Ponedejeljak</th>
+            <th>Utorak</th>
+            <th>Srijeda</th>
+        </tr>
+        <tr>
+            <td>Hrv</td>
+            <td>Metodika</td>
+            <td>SJ</td>
+        </tr>
+        <tr>
+            <td>Hrv</td>
+            <td>Metodika</td>
+            <td>SJ</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>lorem</th>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+    </table>
+
+    <br>
+    <table border="1">
+        <tr>
+            <td rowspan="3">APRIL</td>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+
+    </table>
+
+    <br> tablica za vježbu 
+    <table border="1">
+        <tr>
+            <th>NO.</th>
+            <th>Full name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+            <td rowspan="4">Company</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>$1200</td>
+        </tr>  
+        <tr>
+            <td>3</td>
+            <td>Lary Page</td>
+            <td>Founder Google</td>
+            <td>$1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Z</td>
+            <td>Founder Facebook</td>
+            <td>$1300</td>
+        </tr>
+    </table>
+
+    <br>
+    <!-- HTML forme -->
+     <h3>HTML forme</h3>
+     <form action="" method="get">
+        <label for="name">Unesi svoje ime:</label>
+        <input type="text" name="" id="name"> <br>
+        <label for="prezime:">Unesi prezime:</label>
+        <input type="text" name="prezime" id="prezime" placeholder="unesi prezime..." maxlenght="20" size="25"> <br>
+        <label>Unesi password:</label>
+        <input type="password" maxlenght=""20> <br>
+        <label>Izaberi boju:</label>
+        <input type="color"> <br>
+        <label>Unesi datum:</label>
+        <input type="date"> <br>
+        <label>Unesi email:</label>
+        <input type="email" required> <br>
+        <label>Unesi telefon:</label>
+        <input type="number"> <br>
+        <label>Izaberi najbolji kolegij:</label> <br>
+        <input type="radio" name="kolegij" id="matematika" value="matematika">
+        <label for="matematika">Matematika</label> <br>
+        <input type="radio" name="kolegij" id="hrvatski" value="hrvatski">
+        <label for="hrvatski">Hrvatski</label> <br>
+        <input type="radio" name="kolegij" id="metodika" value="metodika">
+        <label for="metodika">Metodika</label> <br>
+        <label>Najdraže boje:</label> <br>
+        <input type="checkbox" name="boja1" id="boja1">
+        <label for="boja1">Crvena</label> <br>
+        <input type="checkbox" name="boja2" id="boja2">
+        <label for="boja2">Plava</label> <br>
+        <input type="checkbox" name="boja3" id="boja3">
+        <label for="boja3">Zelena</label> <br>
+        <input type="checkbox" name="boja4" id="boja4">
+        <label for="boja4">Žuta</label> <br>
+        <br> <br><br>
+        <h3>Registracija</h3>
+        <label for="name">First Name:</label>
+        <input type="text" name="" id=""> <br>
+        <label for="name">Last Name:</label>
+        <input type="text" name="name" id="name"> <br>
+        <label for="name">Nick Name:</label>
+        <input type="text" name="name" id="name"> <br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email"> <br>
+        <label for="password">Password:</label>
+        <input type="password"> <br>
+        <label for="birth">Date of Birth</label>
+        <input type="date" name="birth"> <br>
+        <label for="gender">Gender:</label> <br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label> <br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label> <br>
+        <input type="radio" name="gender" id="oders">
+        <label for="oders">Oders</label> <br>
+        <label for="mobile">Mobile:</label>
+        <input type="number" name="mobile"> <br>
+        <label for="address">Address:</label>
+        <input type="checkbox" name="address"> <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Pošalji"> 
+     </form>
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/R1r9nLYcqBU?si=dlhUequi2PmytLS-" 
+     title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <h3>Audio i video elementi u HTMLu</h3>
+    <video width="320" height="240" controls>
+        <source src="assets/mov_bbb.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+      <br>
+      <audio src="assets/horse.ogv"></audio>
+
+
+
+    
 </body>
 </html>
