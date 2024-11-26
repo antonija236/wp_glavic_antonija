@@ -1,0 +1,53 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: "normal";
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: "normal";
+}
+
+ul {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: "normal";
+}
+
+p1 {
+    font-family: "Open Sans", sans-serif;
+    width: 16px;
+    font-style: "normal";
+    color: #37474F ;
+}
+
+p2 {
+    font-family: "Open Sans", sans-serif;
+    width: 18px;
+    font-style:italic;
+    color: #546E7A;
+}
+
+p3 {
+    font-family: "Open Sans", sans-serif;
+    width: 20px;
+    font-style: "normal";
+    color: #78909C;
+    background-color:  rgb(48, 94, 61);
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+ul {
+    background-color: #ECEFF1;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
