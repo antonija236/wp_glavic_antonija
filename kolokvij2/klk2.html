@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zastava Nizozemske</title>
+</head>
+<style>
+    p {
+      background-color: rgb(189, 183, 196);
+    }
+
+    .red {
+      display: block;
+      width: 400px;
+      height: 90px;
+      background-color: rgb(133, 21, 21);
+    }
+
+    .white {
+      display: block;
+      width: 400px;
+      height: 90px;
+      background-color: white;
+    }
+
+    .blue {
+      display: block;
+      width: 400px;
+      height: 90px;
+      background-color: rgb(18, 18, 139);
+    }
+</style>
+<body>
+    <h1>Zastava Nizozemske</h1>
+    <p class="red"></p>
+    <p class="white"></p>
+    <p class="blue"></p>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>Box Model</h2>
+    <div class="box">
+        <p>Ovo je box model</p>
+    </div>
+    <style>
+        .box {
+           border: 1px solid rgb(15, 13, 13);
+           margin: 50px 50px 50px 50px;
+           padding: 30px 30px 30px 30px;
+           box-shadow: rgb(91, 91, 194);
+        }
+    </style>
+
+    <br>
+    <br>
+    <br>
+
+    <h3>CSS Grid</h3>
+    <style>
+        .grid {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;}
+       .cell {padding: 20px; text-align: center; border: solid; background-color: aquamarine;}
+ 
+       .jedan {border: 1px solid; border-color: black; padding: 15px; margin: 10px; background-color: rgb(103, 103, 229);}
+       .dva {border: 1px solid; border-color: black; padding: 15px; margin: 10px; background-color: rgb(204, 70, 169);}
+       .tri {border: 1px solid; border-color: black; padding: 15px; margin: 10px; background-color: rgb(120, 174, 194);}
+    </style>
+
+    <div class="grid">
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+    <div class="cell">6</div>
+    <div class="cell">7</div>
+    <div class="cell">8</div>
+    <div class="cell">9</div>
+    </div>
+
+    <div class="jedan"></div>
+    <div class="dva"></div>
+    <div class="tri"></div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <h4>Java script</h4>
+    <script src="index.js"></script>
+</body>
+</html>
