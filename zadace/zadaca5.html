@@ -3,10 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zadaca5</title>
 </head>
 <body>
-    <h2>Recepti</h2>
+   
+    <style>
+    body{
+        font-family:Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        background-color: #df95b9;
+    }
+
+    header {
+       background-image: url('pozadina.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ca2c2c;
+            text-align: center;
+            padding: 40px 10px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+    }
+
+    main {
+        display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+           gap: 20px;
+           padding: 20px;
+    }
+
+    section {
+        grid-column: span 3;
+        background-color: #cf4b4b;
+        border: 1px solid #e8dcdc;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+        transform: translateY (-5px);
+        box-shadow: 0 6px 12px rgba (0, 0, 0, 0.2);
+        }
+
+    .recept img {
+        max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, opacity 0.3s ease;
+    }
+
+    .recept img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #300e1a;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #e7b7cd;
+        }
+
+        p, li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+    footer {
+        background-color: #300e1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+    footer a {
+            color: #be9e9e;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        #kontakt {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #kontakt input, #kontakt button {
+            font-size: 1rem;
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 20px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #kontakt input:focus, #kontakt button:hover {
+            border-color: #de0954;
+            outline: none;
+            box-shadow: 0 0 5px rgba(48, 14, 26, 0.5);
+        }
+
+        #kontakt button {
+            background-color: #532a3d;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #kontakt button:hover {
+            background-color: #cd668a;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+        section {
+                padding: 15px;
+            }
+
+        h2 {
+                font-size: 1.5rem;
+            }
+
+        p, li {
+                font-size: 0.9rem;
+            }
+
+        img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+    <body>
+    <header>
+    <h1>Fitness recepti</h1>
+    <p>Budi fit i sit!</p>
+    </header>
+
+        <section id="Predjela">
+            <h2>Predjela</h2>
+            <div class="recept">
+            <img src="https://budi-fit.hr/images/uploads/20210325_102908%281%29.jpg" alt="Predjelo">
+            <h3>Krem juha od lišća rotkvice sa crvenim čipsom</h3>
+            <p>Rotkvicu najčešće jedemo na salatu tako da naribamo crvene kuglice. No što s lišćem? Ono se itekako može dobro iskoristiti. Evo jedne ideje kako možete iskoristiti zeleni dio.</p>
+            <hr>
+            <h3>Potrebni sastojci:</h3>
+            <li>2 svežnja lišća od rotkvica </li>
+            <li>2-3 velika krumpira</li>
+            <li>1 mali crveni luk</li>
+            <li>maslinovo ulje</li>
+            <li>100 ml vrhnja za kuhanje</li>
+            <li>sol i papar</li>
+            <hr>
+            <h4>Priprema:</h4>
+            <p>Prodinstajte luk na maslinovom ulju, pa mu dodaje oprano i narezano lišće rotkvice te posolite. Dinastajte dok ne uvene, a zatim dodajte krumpir narezan na kockice. Kuhajte dok krumpir ne omekša. Sve izmiksajte u blenderu i dodajte vrhnje i papar.
+                Na kraju odozgo posipajte čipsom od rotkvica.
+                Čips od rotkvica je takoder vrlo lako napraviti: narežite oprane rotkvice na kolutiće, rasporedite ih na papir za pečenje i posolite. Pecite 7 minuta s jedne i 7 minuta s druge strane u pećnici zagrijanoj na 200 stupnjeva.</p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section id="Glavna-jela">
+            <h2>Glavna jela</h2>
+            <div class="recept">
+            <img src="https://florispiri.com/uploads/Z41iEJKZUOPmK5E.webp" alt="Glavno jelo">
+            <h3>Lazanje (bez tijesta!)</h3>
+            <p>Popularno i mnogima omiljeno jelo - lazanje - kod nas su u fit verziji što znači manje kalorične, bogate vlaknima, vitaminima, mineralima i fitonutrijentima zahvaljujući patlidžanu.</p>
+             <hr>
+             <h3>Potrebni sastojci:</h3>
+             <li>patlidžan</li>
+             <li>sjeckana rajčica u umaku (može i iz konzerve) ili samo umak od rajčice</li>
+             <li>crveni luk</li>
+             <li>mljeveni svinjski ili juneći but</li>
+             <li>kokosovo ulje</li>
+             <li>naribana mozarella</li>
+             <hr>
+             <h5>Začini:</h5>
+             <li>sol</li>
+             <li>vegeta</li>
+             <li>papar</li>
+             <li>origano ili bosiljak</li>
+             <hr>
+             <h4>Priprema:</h4>
+             <p>Ogulite patlidžan i narežite ga po dužini na ploške, posolite i ostavite da stoji pola sata kako bi pustio vodu i gorčinu. Zatim popržite luk na malo kokosovog ulja, posolite, dodajte mljevenu papriku i pržite još minutu-dvije pa podlijte s malo vode. Zatim dodajte mljeveno meso, začinite vegetom, podlijte vodom i dobro promiješajte. Ostavite da se krčka oko pola sata uz povremeno miješanje. Nije potrebno poklopiti. Pred kraj, kad je voda isprila, dodajte sjeckanu rajčicu, papar i origano ili bosiljak. Pirjajte još nekoliko minuta.
+                Zagrijte pećnicu na 200 stupnjeva. Ploške patlidžana isperite pod vodom, dobro ocijedite i osušite kuhinjskim ubrusom. Zatim slažite u dublji peh koji ste tanko premazali kokosovim uljem: red ploški patlidžana posipajte s polovicom mljevenog mesa,a preko pospite mozarellom; sve ponovite još jednom. Stavite u pećnicu na 30 minuta. Kad je pečeno, izvadite i ostavite da malo odstoji (cca pola sata), bit će ukusnije. Poslužite uz svježu miješanu ili zelenu salatu.</p>
+            </div>
+            </section>
+            <br>
+            <br>
+            
+            <section id="Desert">
+                <h2>Desert</h2>
+                <div class="recept">
+                <img src="https://budi-fit.hr/images/made/images/uploads/20201015_114800_1000_563_80_s_c1.jpg" alt="Desert">
+                <h3>Čoko-brownie od hokkaido tikve</h3>
+                <p>Tko je za jedan zdravi čokoladni desert da nam uljepša kišne jesenske dane? Dobila sam recept pa ga dijelim s vama jer je mljac!</p>
+                <hr>
+                <h3>Potrebni sastojci:</h3>
+                <li>3 jaja</li>
+                <li>1 hokkaido tikva</li>
+                <li>15 datulja</li>
+                <li>4 žlice meda</li>
+                <li>1 dl kokosovog ulja</li>
+                <li>3 žlice kakaa</li>
+                <li>1 prašak za pecivo</li>
+                <li>1 žica ekstrakta od vanilije</li>
+                <li>4 žlice brašna (smelješ zobene u blenderu)</li>
+                <h4>Priprema:</h4>
+                <p>Oguliti tikvu, izrezati na kockice, staviti na masni papir i ispeći (ja sam pekla 40tak minuta na 180 stupnjeva). 
+                    Datulje (ja sam koristila bez koštica) namoči u vreloj vodi cca 20 min. 
+                    Odvojiti žumanjke od bjelanjka. Od bjelanjaka istući čvrsti snijeg (ja dodam malo soli). 
+                    Umutiti žumanjke s medom i postepeno dodati 3 žlice vrele vode, mutiti dok se malo ne zgusne. 
+                    Potom dodati ulje i vaniliju i nastaviti mutiti. 
+                    U zasebnu posudu pomiješaj suhe sastojke. 
+                    Mjera za žlicu je jušna s time da je kakao u vrh a brašno ravna žlica. 
+                    Kada je tikva gotova stavi ju zajedno s ocijeđenim datuljama (ja nisam skidala kožu) u multipraktik i napravi pire (nemam multi pa koristim sjeckalicu) te dodaj u žumanjke i smuti. 
+                    Smjesa će biti malo gušća ali sad dodaješ bjelanjke miješajući špatulom u istom smjeru. 
+                    Smjesu izlij u pleh s masnim papirom (ja sam koristila okrugli ali može 22x30 ili manji pa će biti višlji kolač) peci na 180 stupnjeva 35 do 40 minuta. Dok je kolač gotov na vreli kolač namaži pekmez (ja nisam). 
+                    Po želji na vrh dodaj čokoladu (može za kuhanje sa steviom i malo kokosovog vrhnja, ili tamna s 95% kakaa iz lidla s malo maslaca, ali možete koristiti i običnu čokoladu s malo vrhnja za šlag).
+                    </p>
+        </div>
+        </section>
     
+    <div id="kontakt">
+        <h3>Kontaktirajte nas</h3>
+        <input type="text" placeholder="Vaše ime">
+        <input type="email" placeholder="Vaš email">
+        <button>Pošalji</button>
+    </div>
+    <footer>
+        <p>© 2025 Recepti. Sva prava pridržana.</p>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+    </footer>
 </body>
 </html>
